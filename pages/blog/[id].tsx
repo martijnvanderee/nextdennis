@@ -1,4 +1,3 @@
-import { apiURL } from "../../variables";
 import { fetcher } from "../../fetcher";
 
 const BlogPost = (props) => {
@@ -11,7 +10,7 @@ const BlogPost = (props) => {
 };
 
 export async function getStaticPaths() {
-  const posts = await fetcher(apiURL, "api1");
+  const posts = await fetcher(process.env.apiURL, "api1");
 
   const paths = posts.data.map((post) => ({
     params: { id: post.id.toString() },
@@ -22,7 +21,7 @@ export async function getStaticPaths() {
 
 // params will contain the id for each generated page.
 export async function getStaticProps({ params }) {
-  const post = await fetcher(apiURL, "api", params.id);
+  const post = await fetcher(process.env.apiURL, "api", params.id);
   return {
     props: {
       title: post.data.Title,

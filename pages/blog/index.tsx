@@ -1,7 +1,6 @@
 import Nav from "../../components/nav";
 import Link from "next/link";
 
-import { apiURL } from "../../variables";
 import { fetcher } from "../../fetcher";
 
 type Props = {
@@ -23,7 +22,7 @@ const Blog: React.FunctionComponent<Props> = ({ blogPosts }) => {
 };
 
 export async function getStaticProps() {
-  const data = await fetcher(apiURL, "api1");
+  const data = await fetcher(process.env.apiURL, "api1");
 
   return { props: { blogPosts: data.data } };
 }
