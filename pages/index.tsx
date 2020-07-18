@@ -1,35 +1,24 @@
-import React from "react";
 import Link from "next/link";
-import Head from "../components/head";
+
 import Nav from "../components/nav";
 
 const axios = require("axios");
 
 export async function getStaticProps() {
-  //   // Call an external API endpoint to get posts.
-  //   // You can use any data fetching library
-  const result = await axios.get(
-    "https://us-central1-website-dennis-stassen.cloudfunctions.net/app/api2"
-  );
-
-  // const result1 = await axios.get(
-  //   "https://denniscms.herokuapp.com/restaurants"
-  // );
-  console.log(result, "result");
-
-  // By returning { props: posts }, the Blog component
-  // will receive `posts` as a prop at build time
   return {
     props: {
       a: 1,
-      b: result.data,
     },
   };
 }
 
-const Home = (props) => {
-  console.log(4, props.b.data[0].name);
-  return <div>{props.b.data[0].name}</div>;
+const Home = () => {
+  return (
+    <div>
+      <Nav />
+      test
+    </div>
+  );
 };
 
 // <Head title="Home" />
