@@ -8,7 +8,6 @@ type Props = {
 };
 
 const Blog: React.FunctionComponent<Props> = ({ blogPosts }) => {
-  console.log("blogposts", blogPosts);
   return (
     <div>
       <Nav />
