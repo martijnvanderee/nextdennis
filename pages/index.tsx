@@ -1,105 +1,100 @@
 import Link from "next/link";
 
+//components
 import Nav from "../components/nav";
-
-const axios = require("axios");
-
-export async function getStaticProps() {
-  return {
-    props: {
-      a: 1,
-    },
-  };
-}
+import { Title } from "../components/title";
 
 const Home = () => {
   return (
-    <div>
+    <div className="relative h-screen v-screen">
       <Nav />
-      test
+      <BackgroundImage />
+
+      <div className="content-container">
+        <Title
+          color="white"
+          title="Dennis Stassen"
+          subtitle="Onderwijsenthousiasteling"
+        />
+        <Content />
+      </div>
     </div>
   );
 };
 
-// <Head title="Home" />
-// <Nav />
-
-// <div className="hero">
-//   <h1 className="title">Welcome to Next!</h1>
-//   <p className="description">
-//     To get started, edit <code>pages/index.js</code> and save to reload.
-//   </p>
-
-//   <div className="row">
-//     <Link href="https://github.com/zeit/next.js#getting-started">
-//       <a className="card">
-//         <h3>Getting Started &rarr;</h3>
-//         <p>Learn more about Next on Github and in their examples</p>
-//       </a>
-//     </Link>
-//     <Link href="https://open.segment.com/create-next-app">
-//       <a className="card">
-//         <h3>Examples &rarr;</h3>
-//         <p>
-//           Find other example boilerplates on the{' '}
-//           <code>create-next-app</code> site
-//         </p>
-//       </a>
-//     </Link>
-//     <Link href="https://github.com/segmentio/create-next-app">
-//       <a className="card">
-//         <h3>Create Next App &rarr;</h3>
-//         <p>Was this tool helpful? Let us know how we can improve it</p>
-//       </a>
-//     </Link>
-//   </div>
-// </div>
-
-// <style jsx>{`
-//   .hero {
-//     width: 100%;
-//     color: #333;
-//   }
-//   .title {
-//     margin: 0;
-//     width: 100%;
-//     padding-top: 80px;
-//     line-height: 1.15;
-//     font-size: 48px;
-//   }
-//   .title,
-//   .description {
-//     text-align: center;
-//   }
-//   .row {
-//     max-width: 880px;
-//     margin: 80px auto 40px;
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-around;
-//   }
-//   .card {
-//     padding: 18px 18px 24px;
-//     width: 220px;
-//     text-align: left;
-//     text-decoration: none;
-//     color: #434343;
-//     border: 1px solid #9b9b9b;
-//   }
-//   .card:hover {
-//     border-color: #067df7;
-//   }
-//   .card h3 {
-//     margin: 0;
-//     color: #067df7;
-//     font-size: 18px;
-//   }
-//   .card p {
-//     margin: 0;
-//     padding: 12px 0 0;
-//     font-size: 13px;
-//     color: #333;
-//   }
-// `}</style>
-
 export default Home;
+
+const BackgroundImage = () => {
+  const imagePath = "dennis_voor_de_klas.jpeg";
+
+  return (
+    <div className="absolute w-full h-full top-0 right-0 z-0">
+      <div className="absolute object-contain opacity-25 h-full w-full bg-color3 z-10" />
+      <div className="relative w-full h-full">
+        <img
+          className="absolute object-cover h-full w-full"
+          alt="Dennis stassen voor de klas"
+          src={require(`images/${imagePath}?trace`).trace}
+        />
+        <img
+          className="absolute object-cover h-full w-full"
+          alt="Dennis stassen voor de klas"
+          src={require(`images/${imagePath}?webp`)}
+        />
+      </div>
+    </div>
+  );
+};
+
+const Content = () => {
+  const imagePath = "dennisCloseup.jpg";
+  return (
+    <div className="relative flex p-12 mt-16 rounded">
+      <div className="absolute w-full h-full inset-0 opacity-50 rounded bg-color3" />
+      <img
+        className="z-10 opacity-0 hidden h-64 w-auto my-auto mr-8 rounded  md:opacity-100 md:block"
+        src={require(`images/${imagePath}?webp`)}
+      />
+      <ContentText />
+    </div>
+  );
+};
+
+const ContentText = () => (
+  <div className="z-10">
+    <p className="text-white text-lg">
+      Hey ik ben Dennis Stassen, een eerste graads economie docent op het
+      Minkema college in Woerden.
+    </p>
+
+    <p className="inline-block my-2 text-lg text-white">
+      Leerlingen hangen achterover, hebben slechte reflectie en maken te weinig
+      stappen vooruit?
+    </p>
+    <p className="inline-block my-2 text-lg text-white">
+      Krijg werkvormen, inspiratie en ideeën om ze te activeren op basis van wat
+      echt werkt volgens onderwijsonderzoek!
+    </p>
+
+    <div>
+      <Link href="/aanbod" passHref>
+        <a>
+          <span className="border-solid border-b border-color1 text-lg text-white">
+            Lees hier wat ik doe{" "}
+          </span>
+        </a>
+      </Link>
+
+      <p className="text-white inline-block my-2 text-lg">of</p>
+
+      <Link href="/contact" passHref>
+        <a>
+          <span className="border-solid border-b border-color1 text-lg text-white">
+            {" "}
+            neem direct contact met mij op!
+          </span>
+        </a>
+      </Link>
+    </div>
+  </div>
+);

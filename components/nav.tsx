@@ -2,22 +2,35 @@ import React from "react";
 import Link from "next/link";
 
 const Nav = () => (
-  <nav>
-    <Link href="/">
-      <a>Home</a>
-    </Link>
-    <Link href="/aanbod">
-      <a>Aanbod</a>
-    </Link>
-    <Link href="/about">
-      <a>About</a>
-    </Link>
-    <Link href="/blog">
-      <a>Blog</a>
-    </Link>
-    <Link href="/contact">
-      <a>Contact</a>
-    </Link>
+  <nav className="navbar">
+    <div className="navbar-content">
+      <Link href="/" passHref>
+        <a className="h-12 sm:h-16">
+          <img
+            className="h-full cursor-pointer"
+            src={require(`images/logoDennis.png`)}
+          />
+        </a>
+      </Link>
+
+      <div className="flex mr-4">
+        <Link href="/aanbod" passHref>
+          <a className="navlink">Aanbod</a>
+        </Link>
+
+        <Link href="/about" passHref>
+          <a className="navlink">Over Mij</a>
+        </Link>
+
+        <Link href="/blog" passHref>
+          <a className="navlink">Blog</a>
+        </Link>
+
+        <Link href="/contact" passHref>
+          <a className="btn shadow hover:bg-orange-500 ">Contact</a>
+        </Link>
+      </div>
+    </div>
   </nav>
 );
 
