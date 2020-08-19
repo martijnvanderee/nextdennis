@@ -1,6 +1,16 @@
 import React from "react";
 
-export const Title = ({ color, title, subtitle }) => (
+type Props = {
+  color: string;
+  title: string;
+  subtitle?: string;
+};
+
+export const Title: React.FunctionComponent<Props> = ({
+  color,
+  title,
+  subtitle,
+}) => (
   <div
     color={color}
     className={`text-center mb-8 my-auto pt-48 z-10 text-${color} `}

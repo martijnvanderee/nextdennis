@@ -81,7 +81,7 @@ const initialValues = {
 };
 
 const validate = (values) => {
-  let errors = {};
+  let errors: any = {};
   if (!values.name) {
     errors.name = "Required";
   }
