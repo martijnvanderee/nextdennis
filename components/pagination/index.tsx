@@ -1,103 +1,94 @@
 const R = require("ramda");
 import React from "react";
 
-const paginate = {
-  totalItems: 130,
-  currentPage: 7,
-  pageSize: 15,
-  totalPages: 10,
-  startPage: 5,
-  endPage: 9,
-  startIndex: 90,
-  endIndex: 104,
-  pages: [5, 6, 7, 8, 9],
-};
+// const paginate = {
+//   totalItems: 130,
+//   currentPage: 7,
+//   pageSize: 15,
+//   totalPages: 10,
+//   startPage: 5,
+//   endPage: 9,
+//   startIndex: 90,
+//   endIndex: 104,
+//   pages: [5, 6, 7, 8, 9],
+// };
 
-const paginationLogic = (
-  totalItems,
-  currentPage = 1,
-  pageSize = 10,
-  maxPagesShow = 10
-) => {
-  const roundNumberUp = (number: number) => Math.ceil(number);
-  const roundNumberDown = (number: number) => Math.floor(number);
+// const paginationLogic = (
+//   totalItems,
+//   currentPage = 1,
+//   pageSize = 10,
+//   maxPagesShow = 10
+// ) => {
+//   const roundNumberUp = (number: number) => Math.ceil(number);
+//   const roundNumberDown = (number: number) => Math.floor(number);
+//   const divideRoundedUp = R.compose(roundNumberUp, R.divide);
 
-  const divideRoundedUp = R.compose(roundNumberUp, R.divide);
+//   const totalPages = divideRoundedUp(totalItems, pageSize);
+//   const startIndex = R.multiply(R.dec(currentPage), pageSize);
+//   let endIndex = R.min(R.add(startIndex, R.dec(pageSize)), R.dec(totalItems));
 
-  const totalPages = divideRoundedUp(totalItems, pageSize);
-  const startIndex = R.multiply(R.dec(currentPage), pageSize);
+//   let maxPagesBeforeCurrentPage = Math.floor(maxPagesShow / 2);
+//   let maxPagesAfterCurrentPage = Math.ceil(maxPagesShow / 2) - 1;
 
-  let endIndex = R.min(R.add(startIndex, R.dec(pageSize)), R.dec(totalItems));
+//   let checkTotal = R.gte(maxPagesShow, totalPages);
+//   let checkTotal1 = R.gte(currentPage, maxPagesBeforeCurrentPage);
+//   let checkTotal2 = R.gte(
+//     R.add(currentPage + maxPagesAfterCurrentPage),
+//     totalPages
+//   );
 
-  let maxPagesBeforeCurrentPage = Math.floor(maxPagesShow / 2);
-  let maxPagesAfterCurrentPage = Math.ceil(maxPagesShow / 2) - 1;
+//   const result = (totalPages) => ({ startPage: 1, endPage: totalPages });
+//   const result1 = (maxPagesShow) => ({ startPage: 1, endPage: maxPagesShow });
+//   const result2 = (totalPages) => ({ startPage: 1, endPage: totalPages });
+//   const result3 = (totalPages) => ({ startPage: 1, endPage: totalPages });
 
-  let checkTotal = R.gte(maxPagesShow, totalPages);
-  let checkTotal1 = R.gte(currentPage, maxPagesBeforeCurrentPage);
-  let checkTotal2 = R.gte(
-    R.add(currentPage + maxPagesAfterCurrentPage),
-    totalPages
-  );
+//   const startpageFunc = (maxPagesShow, totalPages, currentPage) => {
+//     if (totalPages <= maxPagesShow)
+//       return { startPage: 1, endPage: totalPages };
 
-  const result = (totalPages) => ({ startPage: 1, endPage: totalPages });
+//     // total pages more than max so calculate start and end pages
+//     let maxPagesBeforeCurrentPage = Math.floor(maxPagesShow / 2);
+//     let maxPagesAfterCurrentPage = Math.ceil(maxPagesShow / 2) - 1;
+//     if (currentPage <= maxPagesBeforeCurrentPage)
+//       // current page near the start
+//       return { startPage: 1, endPage: maxPagesShow };
 
-  const result1 = (maxPagesShow) => ({ startPage: 1, endPage: maxPagesShow });
+//     if (currentPage + maxPagesAfterCurrentPage >= totalPages)
+//       // current page near the end
+//       return {
+//         startPage: totalPages - maxPagesShow + 1,
+//         endPage: totalPages,
+//       };
 
-  const result2 = (totalPages) => ({ startPage: 1, endPage: totalPages });
-  const result3 = (totalPages) => ({ startPage: 1, endPage: totalPages });
+//     // current page somewhere in the middle
+//     return {
+//       startPage: currentPage - maxPagesBeforeCurrentPage,
+//       endPage: currentPage + maxPagesAfterCurrentPage,
+//     };
+//   };
 
+//   const { startPage, endPage } = startpageFunc(
+//     maxPagesShow,
+//     totalPages,
+//     currentPage
+//   );
 
-  const truncate = R.when(
-    R.propSatisfies(R.gt(R.__, 10), 'length'),
-
-
-  const startpageFunc = (maxPagesShow, totalPages, currentPage) => {
-    if (totalPages <= maxPagesShow)
-      return { startPage: 1, endPage: totalPages };
-
-    // total pages more than max so calculate start and end pages
-    let maxPagesBeforeCurrentPage = Math.floor(maxPagesShow / 2);
-    let maxPagesAfterCurrentPage = Math.ceil(maxPagesShow / 2) - 1;
-    if (currentPage <= maxPagesBeforeCurrentPage)
-      // current page near the start
-      return { startPage: 1, endPage: maxPagesShow };
-
-    if (currentPage + maxPagesAfterCurrentPage >= totalPages)
-      // current page near the end
-      return {
-        startPage: totalPages - maxPagesShow + 1,
-        endPage: totalPages,
-      };
-
-    // current page somewhere in the middle
-    return {
-      startPage: currentPage - maxPagesBeforeCurrentPage,
-      endPage: currentPage + maxPagesAfterCurrentPage,
-    };
-  };
-
-  const { startPage, endPage } = startpageFunc(
-    maxPagesShow,
-    totalPages,
-    currentPage
-  );
-
-  return {
-    totalItems,
-    currentPage,
-    pageSize,
-    totalPages,
-    startIndex,
-    endIndex,
-    startPage,
-    endPage,
-    page: R.range(startPage, R.inc(endPage)),
-  };
-};
+//   return {
+//     totalItems,
+//     currentPage,
+//     pageSize,
+//     totalPages,
+//     startIndex,
+//     endIndex,
+//     startPage,
+//     endPage,
+//     page: R.range(startPage, R.inc(endPage)),
+//   };
+// };
 
 export const Pagination = () => {
-  const pag = paginationLogic(150, 7, 15, 5);
-  console.log(pag);
+  // const pag = paginationLogic(150, 7, 15, 5);
+  // console.log(pag);
 
   return (
     <div className="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">

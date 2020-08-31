@@ -61,7 +61,7 @@ const Materiaal = () => {
         </div>
 
         <a>https://www.youtube.com/channel/UC3Rvdgj_8AfmrqWfZ9Lwh8w</a>
-
+        {/*
         <iframe
           width="560"
           height="315"
@@ -87,7 +87,7 @@ const Materiaal = () => {
           frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen="allowfullscreen"
-        ></iframe>
+        ></iframe> */}
       </div>
     </div>
   );
