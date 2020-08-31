@@ -28,8 +28,8 @@ const BackgroundImage = () => {
   const imagePath = "dennis_voor_de_klas.jpeg";
 
   return (
-    <div className="absolute w-full h-full top-0 right-0 z-0">
-      <div className="absolute object-contain opacity-25 h-full w-full bg-color3 z-10" />
+    <div className="fixed w-full h-full top-0 right-0 z-0">
+      <div className="absolute object-contain opacity-50 h-full w-full bg-color3 z-10" />
       <div className="relative w-full h-full">
         <img
           className="absolute object-cover h-full w-full"
@@ -47,15 +47,72 @@ const BackgroundImage = () => {
 };
 
 const Content = () => {
-  const imagePath = "dennisCloseup.jpg";
+  const path = "dennisCloseup.jpg";
+
   return (
-    <div className="relative flex p-12 mt-16 rounded">
-      <div className="absolute w-full h-full inset-0 opacity-50 rounded bg-color3" />
-      <img
-        className="z-10 opacity-0 hidden h-64 w-auto my-auto mr-8 rounded  md:opacity-100 md:block"
-        src={require(`images/${imagePath}?webp`)}
-      />
-      <ContentText />
+    <div>
+      <div className="relative flex p-12 mt-16 rounded mb-16">
+        <div className="absolute w-full h-full inset-0 opacity-75 rounded bg-color3" />
+        <img
+          className="z-10 opacity-0 hidden h-64 w-auto my-auto mr-8 rounded  md:opacity-100 md:block"
+          src={require(`images/${path}?webp`)}
+        />
+        <ContentText />
+      </div>
+      <BlogPosts />
+    </div>
+  );
+};
+
+const BlogPosts = () => {
+  const path = "dennis_voor_de_klas.jpeg";
+  return (
+    <div className="relative">
+      <h2 className="text-white text-4xl">
+        Lees even mijn laatste blog posts!{" "}
+      </h2>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto ">
+        <div className="">
+          <div className="bg-white hover:bg-gray-200 rounded-t-lg cursor-pointers">
+            <img
+              className="object-cover w-full h-64 rounded-t-lg"
+              src={require(`images/${path}?webp`)}
+            />
+            <div className="p-2 h-48 overflow-visible">
+              <div className="text-xs mb-2">18-12-2011</div>
+              <h2 className="text-2xl font-semibold leading-tight">
+                Massaontslag bij Booking: 4000 medewerkers komen op straat te
+                staan
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div className="bg-green-200 rounded-t-lg">
+          <div>
+            <img
+              className="object-cover w-full h-64"
+              src={require(`images/${path}?webp`)}
+            />
+            <div>date</div>
+            <div>title</div>
+            <div>subtitle</div>
+          </div>
+        </div>
+        <div className="bg-white hover:bg-gray-200 rounded-t-lg cursor-pointer">
+          <img
+            className="object-cover w-full h-64 rounded-t-lg"
+            src={require(`images/${path}?webp`)}
+          />
+          <div className="p-2 h-48 overflow-visible">
+            <div className="text-xs mb-2">18-12-2011</div>
+            <h2 className="text-2xl font-semibold leading-tight">
+              Massaontslag bij Booking: 4000 medewerkers komen op straat te
+              staan
+            </h2>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
@@ -64,7 +121,7 @@ const ContentText = () => (
   <div className="z-10">
     <p className="text-white text-lg">
       Hey ik ben Dennis Stassen, een eerste graads economie docent op het
-      Minkema college in Woerden.
+      Minkema college in Woerden. Leuk dat je een kijkje neemt op mijn site.
     </p>
 
     <p className="inline-block my-2 text-lg text-white">

@@ -111,10 +111,8 @@ const Blog: React.FunctionComponent<Props> = ({ blogPosts }) => {
             </div>
           </div>
           {blogPosts.map((blogPost) => {
-            console.log(blogPost.HeaderImage);
-
             const newDate = formatDate(blogPost.created_at);
-            console.log(newDate);
+
             return (
               <Link href="/blog/[id]" as={`/blog/${blogPost.id}`}>
                 <a className="bg-white hover:bg-gray-200 cursor-pointer">

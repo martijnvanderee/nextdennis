@@ -14,8 +14,8 @@ const Nav = () => (
       </Link>
 
       <div className="flex mr-4">
-        <Link href="/aanbod" passHref>
-          <a className="navlink">Aanbod</a>
+        <Link href="/materiaal" passHref>
+          <a className="navlink">Materiaal/video's</a>
         </Link>
 
         <Link href="/about" passHref>

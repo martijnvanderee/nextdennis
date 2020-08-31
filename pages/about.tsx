@@ -15,7 +15,7 @@ const About = () => {
       <div className="content-container">
         <Title color="#013f5d" title="Over Mij" />
 
-        <div className="md:flex border-b-2 border-gray-200">
+        <div className="border-b-2 border-gray-200">
           <div className="mr-8">
             <div className="h-64 w-48 mx-auto mb-4 ">
               <img
@@ -26,17 +26,117 @@ const About = () => {
             </div>
           </div>
 
-          <p className="text-base text-center md:text-lg">
-            In 2015 ben ik afgestuurd econoom aan Tilburg University, waarna ik
-            bij dezelfde universiteit in 2016 de opleiding tot leraar VO
-            succesvol heb afgerond. Gelijk d aarna ben ik aan de slag gegaan als
-            docent economie bij het Minkema College te Woerden en geef ik les
-            aan 3 havo t/m 6 vwo. Ik heb mijn passie voor economie kunnen
-            combineren met het onderwijsbloed vanuit mijn moeders kant van de
-            familie. De nuttige inzichten met betrekking tot effectief lesgeven
-            wil ik graag delen en op kant-en-klare manier aanbieden aan andere
-            gepassioneerde docenten.
+          <p className="text-base md:text-lg mb-4">
+            <span className="font-black italic">
+              “Waar heb je je nu weer voor opgegeven?!”
+            </span>{" "}
+            riep mijn moeder toen ik thuiskwam van school. Ik zat in de
+            kleuterklas en op de vraag wie van de leerlingen wilde optreden op
+            het 25 jarig jubileum van de school had ik mijn vinger opgestoken,
+            zoals wel vaker. Ik zou optreden als muzikale kat (naar de disney
+            film Aristocats) en een lied uit deze film playbacken. De
+            hulptroepen werden ingeschakeld. Zo kreeg ik grote katten sloffen te
+            leen van mijn neef, er werd van zolder een oud keyboard gehaald en
+            voor het optreden kreeg ik schmink op om de act compleet te maken.
+            Op de avond van het optreden was een groot deel van de familie
+            aanwezig, waaronder mijn oom die het hele gebeuren op film heeft
+            weten vast te leggen.
           </p>
+
+          <p className="text-base md:text-lg mb-4">
+            Ik heb me altijd op het gemak gevoeld voor grote groepen, waardoor
+            ik ook in mijn studententijd vaak degene was die presentaties voor
+            mijn rekening nam. Na het afronden van mijn studie Economics in 2016
+            en de gecombineerde afstudeerstage bij Rabobank en APG{" "}
+            <span className="font-black italic">
+              wist ik dat het voorlopig nog geen tijd was om een kantoorbaan aan
+              te gaan.
+            </span>
+            Integendeel; ik zou nog een jaar lang doorstuderen om mijn
+            bevoegdheid te halen en economieles te kunnen geven aan middelbare
+            scholieren.
+            <span className="font-black italic">
+              {" "}
+              Zo kon ik mijn passie voor economie combineren met mijn eigen
+              podium voor 30 leerlingen.
+            </span>
+          </p>
+
+          <p className="text-base md:text-lg mb-4">
+            In het najaar van 2016 begon mijn stage op een school in Den Bosch
+            en ik kreeg al snel de ruimte om zelfstandig klassen te draaien. Met
+            mijn presentatie ervaring zou ik het wel redden en dat was in het
+            begin ook zo. Totdat het bij de tussentijdse beoordeling misging. Ik
+            kreeg geen contact met de klas, had een matig verhaal en de les ging
+            als een nachtkaars uit. Pubers zijn toch een ander publiek. Aandacht
+            krijgen is niet vanzelfsprekend en ze in een actieve stand krijgen
+            ook niet. Ik heb in deze periode veel gehad aan mijn opleiders en
+            met name de woorden van de schoolopleider, die mijn afgang kon
+            relativeren:{" "}
+            <span className="font-black italic">
+              “Als je denkt dat je er bent, zul je altijd zien dat het misgaat”.
+            </span>
+          </p>
+
+          <p className="text-base md:text-lg mb-4">
+            Vanaf 2017 geef ik als bevoegd docent economieles op het Minkema
+            college en een workshop ‘didactisch coachen’ inspireerde mij enorm.
+            Ik blijf constant op zoek naar praktisch uitvoerbare methodes en
+            werkvormen die{" "}
+            <span className="font-black italic">bewezen effectief</span> werken.
+            Vanaf schooljaar 2020/2021 heb ik zitting genomen in de werkgroep
+            formatief evalueren om ideeën schoolbreed te verspreiden en
+            collega's te helpen.{" "}
+            <span className="font-black italic">
+              Bedenk eens hoe inspirerend lessen kunnen zijn als good practises
+              worden gedeeld en docenten steeds effectiever
+            </span>
+            lesgeven. Authenticiteit moet daarbij niet worden vergeten; elke
+            leraar heeft een eigen stijl van lesgeven, waar bepaalde strategieën
+            bij werken en andere niet. Via deze site deel ik mijn ideeën. Voel
+            je vrij je eigen gereedschapskist aan te vullen en kies eruit wat
+            bij jou past en voor jou werkt!
+          </p>
+
+          <div className="mt-8">
+            <h3 className="text-2xl ">Boeken die mij geïnspireerd hebben</h3>
+
+            <h4 className="text-xl font-bold">Over onderwijs:</h4>
+            <ul className="text-lg">
+              <li className="list-disc">
+                Klein GROOT - De overtuigingskracht van het detail. Kleine
+                veranderingen met grote invloed{" "}
+                <div>
+                  Auteurs: Steve Martin, Noah Goldstein, Robert Cialdini
+                </div>
+              </li>
+
+              <li className="list-disc">
+                De lerende mens <div>Auteur: Jurjen van der Helden</div>
+              </li>
+
+              <li className="list-disc">
+                WIJZE LESSEN: 12 bouwstenen voor effectieve didactiek{" "}
+                <div>
+                  Auteurs: Tim Surma, Prof. Dr. Paul Kirschner, Dr. Gino Camp,
+                  Kristel Vanhoyweghen Prof. Dr. Daniel Muijs, Dr. Dominique
+                  Sluijsmans
+                </div>{" "}
+              </li>
+            </ul>
+
+            <h4 className="text-xl mt-4 font-bold">Over economie/beleggen:</h4>
+            <ul className="text-lg">
+              <li className="list-disc">
+                De Rijkste Man van Babylon <p>Auteur: George Samuel Clason</p>
+              </li>
+
+              <li className="list-disc">
+                Factfulness. Ten Reasons We're Wrong About The World - And Why
+                Things Are Better Than You Think <p>Auteur: Hans Rosling</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

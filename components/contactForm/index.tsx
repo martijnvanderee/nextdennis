@@ -41,14 +41,13 @@ import { Textarea } from "./textarea";
 import { useFormik } from "formik";
 
 const onSubmit = async (values, instance) => {
-  const { name, email, subject, message, instantie } = values;
+  const { name, email, message, instantie } = values;
   console.log(
     "name:",
     name,
     "email:",
     email,
-    "subject:",
-    subject,
+
     "message:",
     message,
     "instantie:",
@@ -62,7 +61,6 @@ const onSubmit = async (values, instance) => {
     {
       name,
       email,
-      subject,
       message,
       instantie,
     }
@@ -76,7 +74,7 @@ const initialValues = {
   name: "",
   instantie: "",
   email: "",
-  subject: "Workshop ronde",
+
   message: "dit is een test",
 };
 
@@ -105,7 +103,6 @@ export const ContactForm = () => {
     validate,
   });
 
-  console.log(formik.errors);
   return (
     <form
       onSubmit={formik.handleSubmit}
@@ -134,17 +131,6 @@ export const ContactForm = () => {
         value={formik.values.email}
         formik={formik}
         errors={formik.errors.email}
-      />
-
-      <Select
-        name="Wat voor type training?"
-        options={[
-          "Workshop ronde",
-          "Driedelige trainingsmiddag",
-          "Plenaire lezing",
-        ]}
-        value={formik.values.subject}
-        formik={formik}
       />
 
       <Textarea name="opmerkingen" />

@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-import Nav from "../components/nav";
+import Nav from "../nav";
 
-import { Title } from "../components/title";
-import { Thema } from "../components/aanbod/thema's";
+import { Title } from "../title";
+import { Thema } from "../aanbod/thema's";
 
 const Icon = styled.div`
   width: calc(5rem);
