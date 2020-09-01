@@ -19,16 +19,15 @@ const Materiaal = () => {
         <Title
           color="#013f5d"
           title="Materiaal"
-          subtitle="Geïntereseerd in een training of heb je een vraag? Vul gerust het formulier in en ik zal zo snel mogelijk reageren"
+          subtitle="Via onderstaande link kun je kijken tussen de werkvormen en materialen die ik gemaakt heb voor mijn leerlingen."
         />
 
         <div>
           <p>
-            Via onderstaande link kun je kijken tussen de werkvormen en
-            materialen die ik gemaakt heb voor mijn leerlingen. De materialen
-            zijn zo goed als van mijn eigen hand, maar toch zal ik via via
-            inspiratie hebben opgedaan van collega’s en andere bronnen. Mocht je
-            onverhoopt eigenaar zijn van bepaalde inhoud; neem dan contact op.
+            De materialen zijn zo goed als van mijn eigen hand, maar toch zal ik
+            via via inspiratie hebben opgedaan van collega’s en andere bronnen.
+            Mocht je onverhoopt eigenaar zijn van bepaalde inhoud; neem dan
+            contact op.
           </p>
 
           <ul>

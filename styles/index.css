@@ -2,7 +2,7 @@
 @import "tailwindcss/components";
 
 .content-container {
-  @apply relative pb-16 px-16 mx-auto;
+  @apply relative pb-16 px-8 mx-auto;
 }
 
 @screen md {

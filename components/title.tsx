@@ -19,6 +19,6 @@ export const Title: React.FunctionComponent<Props> = ({
       {title}
     </h1>
     <div className={`border-solid border border-color1 text-${color}`}></div>
-    <h3 className="m-0 text-2xl leading-normal text-3xl">{subtitle}</h3>
+    <h3 className="m-0 text-2xl leading-normal md:text-3xl">{subtitle}</h3>
   </div>
 );

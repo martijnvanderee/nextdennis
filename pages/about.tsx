@@ -19,7 +19,7 @@ const About = () => {
           <div className="mr-8">
             <div className="h-64 w-48 mx-auto mb-4 ">
               <img
-                src={require(`images/${path}?webp`)}
+                src={path}
                 alt="Dennis stassen voor de klas"
                 className="object-cover h-full w-full rounded "
               />
@@ -99,9 +99,11 @@ const About = () => {
           </p>
 
           <div className="mt-8">
-            <h3 className="text-2xl ">Boeken die mij geïnspireerd hebben</h3>
+            <h3 className="text-xl md:text-2xl ">
+              Boeken die mij geïnspireerd hebben
+            </h3>
 
-            <h4 className="text-xl font-bold">Over onderwijs:</h4>
+            <h4 className="text-lg font-bold">Over onderwijs:</h4>
             <ul className="text-lg">
               <li className="list-disc">
                 Klein GROOT - De overtuigingskracht van het detail. Kleine
@@ -125,7 +127,7 @@ const About = () => {
               </li>
             </ul>
 
-            <h4 className="text-xl mt-4 font-bold">Over economie/beleggen:</h4>
+            <h4 className="text-lg mt-4 font-bold">Over economie/beleggen:</h4>
             <ul className="text-lg">
               <li className="list-disc">
                 De Rijkste Man van Babylon <p>Auteur: George Samuel Clason</p>

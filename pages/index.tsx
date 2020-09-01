@@ -51,11 +51,11 @@ const Content = () => {
 
   return (
     <div>
-      <div className="relative flex p-12 mt-16 rounded mb-16">
+      <div className="relative flex p-6 mt-16 rounded mb-16">
         <div className="absolute w-full h-full inset-0 opacity-75 rounded bg-color3" />
         <img
           className="relative opacity-0 hidden h-64 w-auto my-auto mr-8 rounded  md:opacity-100 md:block"
-          src={require(`images/${path}?webp`)}
+          src={path}
         />
         <ContentText />
       </div>
@@ -65,53 +65,34 @@ const Content = () => {
 };
 
 const BlogPosts = () => {
-  const path = "dennis_voor_de_klas.jpeg";
   return (
     <div className="relative">
-      <h2 className="text-white text-4xl">
+      <h2 className="text-white text-2xl md:text-4xl">
         Lees even mijn laatste blog posts!{" "}
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto ">
-        <div className="">
-          <div className="bg-white hover:bg-gray-200 rounded-t-lg cursor-pointers">
-            <img
-              className="object-cover w-full h-64 rounded-t-lg"
-              src={require(`images/${path}?webp`)}
-            />
-            <div className="p-2 h-48 overflow-visible">
-              <div className="text-xs mb-2">18-12-2011</div>
-              <h2 className="text-2xl font-semibold leading-tight">
-                Massaontslag bij Booking: 4000 medewerkers komen op straat te
-                staan
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div className="bg-green-200 rounded-t-lg">
-          <div>
-            <img
-              className="object-cover w-full h-64"
-              src={require(`images/${path}?webp`)}
-            />
-            <div>date</div>
-            <div>title</div>
-            <div>subtitle</div>
-          </div>
-        </div>
-        <div className="bg-white hover:bg-gray-200 rounded-t-lg cursor-pointer">
-          <img
-            className="object-cover w-full h-64 rounded-t-lg"
-            src={require(`images/${path}?webp`)}
-          />
-          <div className="p-2 h-48 overflow-visible">
-            <div className="text-xs mb-2">18-12-2011</div>
-            <h2 className="text-2xl font-semibold leading-tight">
-              Massaontslag bij Booking: 4000 medewerkers komen op straat te
-              staan
-            </h2>
-          </div>
-        </div>
+        <BlogPost />
+        <BlogPost />
+        <BlogPost />
+      </div>
+    </div>
+  );
+};
+
+const BlogPost = () => {
+  const path = "dennisCloseup.jpg";
+  return (
+    <div className="flex md:block bg-white hover:bg-gray-200 cursor-pointers h-32  md:h-auto">
+      <div className="object-cover h-full md:h-64 w-64 md:w-full">
+        <img className="object-cover h-full w-full" src={path} />
+      </div>
+
+      <div className="relative p-2 h-full md:h-32 overflow-visible ">
+        <h2 className="text-lg md:text-xl font-semibold leading-tight">
+          Massaontslag bij Booking: 4000 medewerkers komen op straat te staan
+        </h2>
+        <div className="absolute bottom-0 text-xs mb-2">18-12-2011</div>
       </div>
     </div>
   );
@@ -137,7 +118,7 @@ const ContentText = () => (
       <Link href="/aanbod" passHref>
         <a>
           <span className="border-solid border-b border-color1 text-lg text-white">
-            Lees hier wat ik doe{" "}
+            Lees wat ik doe{" "}
           </span>
         </a>
       </Link>
@@ -148,7 +129,7 @@ const ContentText = () => (
         <a>
           <span className="border-solid border-b border-color1 text-lg text-white">
             {" "}
-            neem direct contact met mij op!
+            neem contact met mij op!
           </span>
         </a>
       </Link>
