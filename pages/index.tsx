@@ -39,7 +39,7 @@ const BackgroundImage = () => {
         <img
           className="absolute object-cover h-full w-full"
           alt="Dennis stassen voor de klas"
-          src={require(`images/${imagePath}?webp`)}
+          src={imagePath}
         />
       </div>
     </div>
@@ -54,7 +54,7 @@ const Content = () => {
       <div className="relative flex p-12 mt-16 rounded mb-16">
         <div className="absolute w-full h-full inset-0 opacity-75 rounded bg-color3" />
         <img
-          className="z-10 opacity-0 hidden h-64 w-auto my-auto mr-8 rounded  md:opacity-100 md:block"
+          className="relative opacity-0 hidden h-64 w-auto my-auto mr-8 rounded  md:opacity-100 md:block"
           src={require(`images/${path}?webp`)}
         />
         <ContentText />
@@ -118,7 +118,7 @@ const BlogPosts = () => {
 };
 
 const ContentText = () => (
-  <div className="z-10">
+  <div className="relative">
     <p className="text-white text-lg">
       Hey ik ben Dennis Stassen, een eerste graads economie docent op het
       Minkema college in Woerden. Leuk dat je een kijkje neemt op mijn site.
