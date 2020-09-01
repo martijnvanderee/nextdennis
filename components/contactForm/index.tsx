@@ -40,14 +40,15 @@ import { Textarea } from "./textarea";
 
 import { useFormik } from "formik";
 
-const onSubmit = async (values, instance) => {
-  const { name, email, message, instantie } = values;
+const onSubmit = async (values, { resetForm }) => {
+  const { name, email, message, instantie, subject } = values;
   console.log(
     "name:",
     name,
     "email:",
     email,
-
+    "subject",
+    subject,
     "message:",
     message,
     "instantie:",
@@ -63,10 +64,15 @@ const onSubmit = async (values, instance) => {
       email,
       message,
       instantie,
+      subject,
     }
   );
+
+  resetForm({});
+
+  console.log("response", response);
   if (response.status !== 200) {
-    console.log(response);
+    console.log(response, "error");
   }
 };
 
@@ -74,8 +80,8 @@ const initialValues = {
   name: "",
   instantie: "",
   email: "",
-
   message: "dit is een test",
+  subject: "subject",
 };
 
 const validate = (values) => {

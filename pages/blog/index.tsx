@@ -27,7 +27,7 @@ const Blog: React.FunctionComponent<Props> = ({ blogPosts }) => {
           subtitle="artikelen en willekeurige hersenspinsels van mij over de huidige economie"
         />
 
-        <div className="grid grid-cols-2  md:grid-cols-3 gap-4 max-w-6xl mx-auto ">
+        <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto ">
           <BlogPost />
           <BlogPost /> <BlogPost /> <BlogPost /> <BlogPost /> <BlogPost />
           {blogPosts.map((blogPost) => {

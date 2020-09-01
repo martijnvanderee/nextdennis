@@ -83,7 +83,7 @@ const BlogPosts = () => {
 const BlogPost = () => {
   const path = "dennisCloseup.jpg";
   return (
-    <div className="flex md:block bg-white hover:bg-gray-200 cursor-pointers h-32  md:h-auto">
+    <div className="flex md:block bg-white hover:bg-gray-200 cursor-pointers h-32 md:h-auto">
       <div className="object-cover h-full md:h-64 w-64 md:w-full">
         <img className="object-cover h-full w-full" src={path} />
       </div>
