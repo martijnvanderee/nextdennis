@@ -13,7 +13,6 @@ export const fetcher = async (url: string[], body = {}) => {
   }
 
   const data = await axios.get(newURL);
-
   return data.data;
 };
 

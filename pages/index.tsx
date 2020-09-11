@@ -47,6 +47,11 @@ const BackgroundImage = () => {
           alt="Dennis stassen voor de klas"
           src={require(`images/${imagePath}?webp`)}
         />
+        <img
+          className="absolute object-cover h-full w-full"
+          alt="Dennis stassen voor de klas"
+          src={require(`images/${imagePath}`)}
+        />
       </div>
     </div>
   );
