@@ -6,6 +6,7 @@ module.exports = {
   theme: {
     boxShadow: {
       error: "0 0 0 3px rgba(255, 40, 40, 0.5)",
+      offset: "0 10px 10px -5px #013f5d",
     },
 
     extend: {

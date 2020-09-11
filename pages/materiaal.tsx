@@ -6,26 +6,21 @@ import { Title } from "../components/title";
 import { Pagination } from "../components/pagination";
 
 const Materiaal = () => {
-  const truncate = R.when(R.and(true, R.__), (a) => console.log("it works", a));
-
   return (
     <div className="relative">
-      <div className="overlay-background-image bg-blue-100 opacity-50" />
+      <div className="overlay-background-image bg-blue-100 opacity-25" />
       <Nav />
 
       <div className="content-container">
-        <Title
-          color="#013f5d"
-          title="Materiaal / video's"
-          subtitle="Via onderstaande link kun je kijken tussen de werkvormen en materialen die ik gemaakt heb voor mijn leerlingen."
-        />
+        <Title color="#013f5d" title="Materiaal / video's" />
 
         <div className="mb-8 ">
-          <p className="text-lg">
-            De materialen zijn zo goed als van mijn eigen hand, maar toch zal ik
-            via via inspiratie hebben opgedaan van collega’s en andere bronnen.
-            Mocht je onverhoopt eigenaar zijn van bepaalde inhoud; neem dan
-            contact op.
+          <p className="text-lg border-b-2 border-gray-200 pb-2">
+            Via onderstaande link kun je kijken tussen de werkvormen en
+            materialen die ik gemaakt heb voor mijn leerlingen. De materialen
+            zijn zo goed als van mijn eigen hand, maar toch zal ik via via
+            inspiratie hebben opgedaan van collega’s en andere bronnen. Mocht je
+            onverhoopt eigenaar zijn van bepaalde inhoud; neem dan contact op.
           </p>
 
           <ul>
@@ -78,10 +73,11 @@ const Materiaal = () => {
             <iframe
               width="100%"
               height="315"
-              src="https://www.youtube.com/embed/YF1gViTU5M4"
+              src="https://www.youtube.com/embed/RkmQ8mutLdc"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              className="shadow-offset"
             />
           </div>
 
@@ -89,10 +85,11 @@ const Materiaal = () => {
             <iframe
               width="100%"
               height="315"
-              src="https://www.youtube.com/embed/YF1gViTU5M4"
+              src="https://www.youtube.com/embed/xmRgs-hgkQs"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              className="shadow-offset"
             />
           </div>
 
@@ -100,10 +97,11 @@ const Materiaal = () => {
             <iframe
               width="100%"
               height="315"
-              src="https://www.youtube.com/embed/YF1gViTU5M4"
+              src="https://www.youtube.com/embed/4MRzGg6TZWE"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              className="shadow-offset"
             />
           </div>
         </div>

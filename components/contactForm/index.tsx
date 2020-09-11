@@ -69,11 +69,6 @@ const onSubmit = async (values, { resetForm }) => {
   );
 
   resetForm({});
-
-  console.log("response", response);
-  if (response.status !== 200) {
-    console.log(response, "error");
-  }
 };
 
 const initialValues = {
@@ -112,7 +107,7 @@ export const ContactForm = () => {
   return (
     <form
       onSubmit={formik.handleSubmit}
-      className="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4"
+      className="bg-white shadow-offset rounded px-8 pt-6 pb-8 mb-4"
     >
       <Input
         name="name"

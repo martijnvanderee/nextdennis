@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 const Nav = () => (
-  <nav className="navbar">
+  <header className="navbar">
     <div className="navbar-content">
       <Link href="/" passHref>
         <a className="h-12 sm:h-16">
@@ -13,7 +13,7 @@ const Nav = () => (
         </a>
       </Link>
 
-      <div className="flex mr-4">
+      <nav className="flex mr-4">
         <Link href="/materiaal" passHref>
           <a className="navlink">Materiaal/video's</a>
         </Link>
@@ -29,9 +29,9 @@ const Nav = () => (
         <Link href="/contact" passHref>
           <a className="btn shadow hover:bg-orange-500 ">Contact</a>
         </Link>
-      </div>
+      </nav>
     </div>
-  </nav>
+  </header>
 );
 
 export default Nav;
