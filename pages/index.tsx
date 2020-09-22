@@ -9,7 +9,7 @@ import { BackgroundImage } from "../components/backgroundImage";
 
 import { fetcher } from "../fetcher";
 
-const Home = ({ blogPosts }) => (
+const Home = ({ blogPosts }: any) => (
   <div className="relative h-screen v-screen">
     <Nav />
     <BackgroundImage />

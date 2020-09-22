@@ -1,6 +1,6 @@
 import { BlogPost } from "./blogPost";
 
-export const BlogPosts = ({ blogPosts }) => (
+export const BlogPosts = ({ blogPosts }: any) => (
   <div className="relative p-6">
     <div className="absolute w-full h-full inset-0 opacity-100 rounded-lg bg-color3" />
 
@@ -9,7 +9,7 @@ export const BlogPosts = ({ blogPosts }) => (
     </h2>
 
     <article className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto ">
-      {blogPosts.map((blogPost, index) => (
+      {blogPosts.map((blogPost: any, index: string) => (
         <BlogPost blogPost={blogPost} key={index} />
       ))}
     </article>

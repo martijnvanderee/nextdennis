@@ -8,10 +8,7 @@ type IValues = {
   subject: string;
 };
 
-export const onSubmit: React.FunctionComponent<any> = async (
-  values,
-  { resetForm }
-) => {
+export const onSubmit = async (values: any, { resetForm }: any) => {
   const { name, email, message, instantie, subject } = values;
 
   await fetcher(

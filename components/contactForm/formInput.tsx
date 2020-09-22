@@ -3,11 +3,11 @@ import { IFormItems } from "../../typescript";
 
 type IFormItemsExtra = IFormItems & { option?: string };
 
-const extractInputProps: React.FunctionComponent<IFormItemsExtra> = (
+const extractInputProps: React.FunctionComponent<any> = (
   { formik, options, ...otherProps },
   option
 ) => {
-  const props = {
+  const props: any = {
     value: formik.values[otherProps.name],
     onChange: formik.handleChange,
     onBlur: formik.handleBlur,

@@ -3,7 +3,7 @@ const practicePath = require(`images/dennisCloseup.jpg?webp`);
 
 import { formatDate } from "../helpers";
 
-export const BlogPost = ({ blogPost }) => {
+export const BlogPost = ({ blogPost }: any) => {
   const imageLink = blogPost.HeaderImage.url;
   return (
     <Link href="/blog/[id]" as={`/blog/${blogPost.id}`}>
