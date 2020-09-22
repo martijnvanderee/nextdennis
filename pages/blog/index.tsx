@@ -22,8 +22,8 @@ const Blog: React.FunctionComponent<Props> = ({ blogPosts }) => {
         />
 
         <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto ">
-          {blogPosts.map((blogPost) => (
-            <BlogPost blogPost={blogPost} />
+          {blogPosts.map((blogPost, index) => (
+            <BlogPost blogPost={blogPost} key={index} />
           ))}
         </div>
       </div>

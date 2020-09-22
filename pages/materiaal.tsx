@@ -72,7 +72,7 @@ const Materiaal = () => (
             height="315"
             src="https://www.youtube.com/embed/RkmQ8mutLdc"
             frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            //allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="shadow-offset"
           />
@@ -84,7 +84,7 @@ const Materiaal = () => (
             height="315"
             src="https://www.youtube.com/embed/xmRgs-hgkQs"
             frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            //allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="shadow-offset"
           />
@@ -96,7 +96,7 @@ const Materiaal = () => (
             height="315"
             src="https://www.youtube.com/embed/4MRzGg6TZWE"
             frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            //  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="shadow-offset"
           />

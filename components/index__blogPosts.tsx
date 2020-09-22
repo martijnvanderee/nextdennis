@@ -9,8 +9,8 @@ export const BlogPosts = ({ blogPosts }) => (
     </h2>
 
     <article className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto ">
-      {blogPosts.map((blogPost) => (
-        <BlogPost blogPost={blogPost} />
+      {blogPosts.map((blogPost, index) => (
+        <BlogPost blogPost={blogPost} key={index} />
       ))}
     </article>
   </div>
