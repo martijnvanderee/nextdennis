@@ -10,9 +10,9 @@ const BlogPost = (props) => {
       <Nav />
 
       <div className="content-container pt-32">
-        <h1 className="text-2xl">{props.title}</h1>
+        <h1 className="text-2xl text-headerColor">{props.title}</h1>
 
-        <p className="text-base">
+        <p className="text-base text-fontColor">
           've gone back and forth about whether or not to have comments on the
           site. Most of all, I've liked having absolutely no server or external
           scripts on the site, and not having to moderate comments that are

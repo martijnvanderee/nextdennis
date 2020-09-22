@@ -27,7 +27,7 @@ const Nav = () => (
         </Link>
 
         <Link href="/contact" passHref>
-          <a className="btn shadow hover:bg-orange-500 ">Contact</a>
+          <a className="btn shadow hover:bg-hoverColor1">Contact</a>
         </Link>
       </nav>
     </div>

@@ -6,7 +6,7 @@ import { ContactForm } from "../components/contactForm";
 const Contact = () => {
   return (
     <div className="relative">
-      <div className="overlay-background-image bg-blue-100 opacity-50" />
+      <div className="overlay-background-image bg-blue-100 opacity-25" />
       <Nav />
 
       <div className="content-container">

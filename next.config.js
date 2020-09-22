@@ -14,15 +14,3 @@ module.exports = withOptimizedImages({
     return config;
   },
 });
-
-// module.exports = {
-//   async redirects() {
-//     return [
-//       {
-//         source: "/old-blog/:post(\\d{1,})",
-//         destination: "/blog/:post", // Matched parameters can be used in the destination
-//         permanent: true,
-//       },
-//     ];
-//   },
-// };
