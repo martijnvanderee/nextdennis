@@ -7,7 +7,7 @@ export const BlogPost = ({ blogPost }: any) => {
   const imageLink = blogPost.HeaderImage.url;
   return (
     <Link href="/blog/[id]" as={`/blog/${blogPost.id}`}>
-      <a className="flex md:block bg-white cursor-pointer rounded h-32 md:h-auto shadow-offset hover:shadow-offsetHover rounded">
+      <a className="flex md:block bg-white cursor-pointer rounded h-32 md:h-auto shadow-offset hover:shadow-offsetHover rounded transition duration-500 ease-in-out">
         <div className="object-cover h-full md:h-64 w-32 md:w-full flex-none">
           <img
             className="object-cover h-full w-full rounded-t"

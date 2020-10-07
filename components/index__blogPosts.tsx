@@ -1,8 +1,8 @@
 import { BlogPost } from "./blogPost";
 
 export const BlogPosts = ({ blogPosts }: any) => (
-  <div className="relative p-6">
-    <div className="absolute w-full h-full inset-0 opacity-100 rounded-lg bg-color3" />
+  <div className="relative p-6 shadow-offsetHover">
+    <div className="absolute w-full h-full inset-0 opacity-75 rounded-lg bg-color3" />
 
     <h2 className="relative text-white text-2xl md:text-3xl">
       Lees even mijn laatste blog posts!

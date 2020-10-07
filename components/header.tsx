@@ -2,8 +2,8 @@ import Link from "next/link";
 const practicePath = require(`images/dennisCloseup.jpg?webp`);
 
 export const Header = () => (
-  <div className="relative flex p-6 mt-16 rounded-lg mb-16">
-    <div className="absolute w-full h-full inset-0 opacity-100 rounded-lg bg-color3" />
+  <div className="relative flex p-6 mt-16 rounded-lg mb-16 shadow-offsetHover">
+    <div className="absolute w-full h-full inset-0 opacity-75 rounded-lg bg-color3" />
     <img
       className="relative opacity-0 hidden h-64 w-auto my-auto mr-8 rounded  md:opacity-100 md:block"
       src={practicePath}
