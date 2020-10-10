@@ -6,12 +6,13 @@ export const Header = () => (
     <div className="absolute w-full h-full inset-0 opacity-75 rounded-lg bg-color3" />
     <img
       className="relative opacity-0 hidden h-64 w-auto my-auto mr-8 rounded  md:opacity-100 md:block"
-      src={path}
+      src="https://res.cloudinary.com/dta9vptzh/image/upload/c_scale,w_222/v1602326002/dennisStassen/dennisCloseup.jpg"
+      alt="foto van dennis stassen"
     />
     <div className="relative">
-      <p className="text-white text-lg">
+      <h4 className="text-white text-lg">
         Welkom op mijn zoektocht naar beter onderwijs.
-      </p>
+      </h4>
 
       <p className="my-2 text-lg text-white">
         Graag deel ik met jou mijn bevindingen en hersenspinsels hierover.

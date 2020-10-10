@@ -8,7 +8,9 @@ const Nav = () => (
         <a className="h-12 sm:h-16">
           <img
             className="h-full cursor-pointer"
-            src={require(`images/logoDennis.png`)}
+            src={
+              "https://res.cloudinary.com/dta9vptzh/image/upload/c_scale,w_150/v1602325989/dennisStassen/logoDennis-1.png"
+            }
           />
         </a>
       </Link>

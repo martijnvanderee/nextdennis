@@ -5,8 +5,6 @@ import Nav from "../components/nav";
 import { Title } from "../components/title";
 
 const About = () => {
-  const path = "dennisCloseup.jpg";
-
   return (
     <div className="relative">
       <div className="overlay-background-image bg-blue-100 opacity-25" />
@@ -19,8 +17,8 @@ const About = () => {
           <div className="mr-8">
             <div className="h-64 w-48 mx-auto mb-4 ">
               <img
-                src={path}
-                alt="Dennis stassen voor de klas"
+                src="https://res.cloudinary.com/dta9vptzh/image/upload/c_scale,w_222/v1602326002/dennisStassen/dennisCloseup.jpg"
+                alt="foto van dennis stassen"
                 className="object-cover h-full w-full rounded "
               />
             </div>

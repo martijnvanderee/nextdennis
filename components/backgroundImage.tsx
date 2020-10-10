@@ -1,7 +1,3 @@
-const outlineImg = require(`images/dennis_voor_de_klas.jpeg?trace`);
-const fastImg = require(`images/dennis_voor_de_klas.jpeg?webp`);
-const slowImg = require(`images/dennis_voor_de_klas.jpeg?`);
-
 export const BackgroundImage = () => {
   return (
     <div className="fixed w-full h-full top-0 right-0 z-0">
@@ -10,17 +6,23 @@ export const BackgroundImage = () => {
         <img
           className="absolute object-cover h-full w-full"
           alt="Dennis stassen voor de klas"
-          src={outlineImg}
+          src={
+            "https://res.cloudinary.com/dta9vptzh/image/upload/c_scale,w_1666/v1602325993/dennisStassen/dennis_voor_de_klas.jpg"
+          }
         />
         <img
           className="absolute object-cover h-full w-full"
           alt="Dennis stassen voor de klas"
-          src={fastImg}
+          src={
+            "https://res.cloudinary.com/dta9vptzh/image/upload/c_scale,w_1666/v1602325993/dennisStassen/dennis_voor_de_klas.jpg"
+          }
         />
         <img
           className="absolute object-cover h-full w-full"
           alt="Dennis stassen voor de klas"
-          src={slowImg}
+          src={
+            "https://res.cloudinary.com/dta9vptzh/image/upload/c_scale,w_1666/v1602325993/dennisStassen/dennis_voor_de_klas.jpg"
+          }
         />
       </div>
     </div>
