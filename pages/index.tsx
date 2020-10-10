@@ -17,11 +17,11 @@ const Home = ({ blogPosts }: any) => (
       <Title
         color="white"
         title="Dennis Stassen"
-        subtitle="Onderwijsenthousiasteling"
+        subtitle="Enthousiast Econoom & Leergierige Leraar"
       />
       <>
         <Header />
-        <BlogPosts blogPosts={blogPosts} />
+        {/* <BlogPosts blogPosts={blogPosts} /> */}
       </>
     </main>
   </div>

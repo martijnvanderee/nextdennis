@@ -6,21 +6,19 @@ export const Header = () => (
     <div className="absolute w-full h-full inset-0 opacity-75 rounded-lg bg-color3" />
     <img
       className="relative opacity-0 hidden h-64 w-auto my-auto mr-8 rounded  md:opacity-100 md:block"
-      src={practicePath}
+      src={path}
     />
     <div className="relative">
       <p className="text-white text-lg">
-        Hey ik ben Dennis Stassen, een eerste graads economie docent op het
-        Minkema college in Woerden. Leuk dat je een kijkje neemt op mijn site.
+        Welkom op mijn zoektocht naar beter onderwijs.
       </p>
 
       <p className="my-2 text-lg text-white">
-        Leerlingen hangen achterover, hebben slechte reflectie en maken te
-        weinig stappen vooruit?
+        Graag deel ik met jou mijn bevindingen en hersenspinsels hierover.
       </p>
       <p className="my-2 text-lg text-white">
-        Krijg werkvormen, inspiratie en ideeën om ze te activeren op basis van
-        wat echt werkt volgens onderwijsonderzoek!
+        Daarnaast vind je werkvormen, presentaties en video’s om vrij te
+        gebruiken voor (economie) lessen.
       </p>
 
       <div>

@@ -18,14 +18,14 @@ const Blog: React.FunctionComponent<Props> = ({ blogPosts }) => {
         <Title
           color="#013f5d"
           title="Blog"
-          subtitle="artikelen en willekeurige hersenspinsels van mij over de huidige economie"
+          subtitle="Lees hier over mijn zoektocht naar beter onderwijs"
         />
 
-        <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto ">
+        {/* <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto ">
           {blogPosts.map((blogPost, index) => (
             <BlogPost blogPost={blogPost} key={index} />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

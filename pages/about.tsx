@@ -93,7 +93,7 @@ const About = () => {
               en collega's te helpen.{" "}
               <span className="font-black italic text-fontColor">
                 Bedenk eens hoe inspirerend lessen kunnen zijn als good
-                practises worden gedeeld en docenten steeds effectiever
+                practises worden gedeeld en docenten steeds effectiever{" "}
               </span>
               lesgeven. Authenticiteit moet daarbij niet worden vergeten; elke
               leraar heeft een eigen stijl van lesgeven, waar bepaalde
