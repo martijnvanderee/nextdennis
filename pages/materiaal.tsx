@@ -15,10 +15,11 @@ const Materiaal = () => (
           materialen die ik gemaakt heb voor mijn leerlingen. Gesorteerd op
           jaarlaag vind je werkvormen en presentaties voor economie lessen en in
           de map algemeen materialen die ook voor andere vakken toepasbaar zijn.
-          Voel je vrij deze te downloaden, te veranderen en zelf te gebruiken.De
-          materialen zijn zo goed als van mijn eigen hand, maar toch zal ik via
-          via inspiratie hebben opgedaan van collega’s en andere bronnen. Mocht
-          je onverhoopt eigenaar zijn van bepaalde inhoud; neem dan contact op.
+          Voel je vrij deze te downloaden, te veranderen en zelf te gebruiken.
+          De materialen zijn zo goed als van mijn eigen hand, maar toch zal ik
+          via via inspiratie hebben opgedaan van collega’s en andere bronnen.
+          Mocht je onverhoopt eigenaar zijn van bepaalde inhoud; neem dan
+          contact op.
         </p>
 
         <ul>
@@ -66,8 +67,15 @@ const Materiaal = () => (
       </div>
 
       <h2 className="relative text-2xl md:text-3xl text-fontColor">
-        Bekijk mijn youtube filmpjes
+        Hier zijn een aantal video's van mijn online lessen.
       </h2>
+
+      <a href="https://www.youtube.com/channel/UC3Rvdgj_8AfmrqWfZ9Lwh8w">
+        <span className="border-solid border-b border-color1 text-lg text-fontColor">
+          Als je meer wil zien klik op deze link.
+        </span>
+      </a>
+
       <div className="grid md:grid-cols-2 gap-4 max-w-6xl mx-auto ">
         <div>
           <iframe
