@@ -32,6 +32,7 @@ const Blog: React.FunctionComponent<Props> = ({ blogPosts }) => {
 };
 
 export async function getStaticProps() {
+
   const data = await fetcher([process.env.API_URL, "posts"]);
 
   return { props: { blogPosts: data.data } };

@@ -27,8 +27,6 @@ const Home = ({ blogPosts }: any) => (
   </div>
 );
 
-
-
 export default Home;
 
 export async function getStaticProps() {
