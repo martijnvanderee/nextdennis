@@ -1,5 +1,5 @@
 import Link from "next/link";
-const practicePath = require(`images/dennisCloseup.jpg?webp`);
+
 
 import { formatDate } from "../helpers";
 
