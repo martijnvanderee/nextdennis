@@ -21,11 +21,11 @@ const Blog: React.FunctionComponent<Props> = ({ blogPosts }) => {
           subtitle="Lees hier over mijn zoektocht naar beter onderwijs"
         />
 
-        {/* <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto ">
+        <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto ">
           {blogPosts.map((blogPost, index) => (
             <BlogPost blogPost={blogPost} key={index} />
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   );

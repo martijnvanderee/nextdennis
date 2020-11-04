@@ -21,7 +21,7 @@ const Home = ({ blogPosts }: any) => (
       />
       <>
         <Header />
-        {/* <BlogPosts blogPosts={blogPosts} /> */}
+        <BlogPosts blogPosts={blogPosts} />
       </>
     </main>
   </div>
