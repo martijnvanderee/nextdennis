@@ -19,6 +19,9 @@ export const BlogPost = ({ blogPost }: any) => {
           <h2 className="text-lg md:text-xl font-semibold leading-tight text-headingColor">
             {blogPost.Title}
           </h2>
+          <p className="text-sm leading-tight ">
+            {blogPost.Subtitle}
+          </p>
           <time className="absolute bottom-0 text-xs mb-2">
             {" "}
             {formatDate(blogPost.updated_at)[0]}
