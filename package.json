@@ -21,6 +21,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-form": "^4.0.1",
+    "react-markdown": "^5.0.2",
     "styled-components": "^5.2.1",
     "swr": "^0.2.3",
     "webp-loader": "^0.6.0"

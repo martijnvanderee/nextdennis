@@ -16,7 +16,7 @@ const Head = (props: any) => (
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="mask-icon" href="/static/favicon-mask.svg" color="#49B882" />
-    <link rel="icon" href="/static/favicon.ico" />
+    <link rel="icon" href="/logoDennis.ico" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
