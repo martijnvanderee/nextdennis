@@ -4,7 +4,7 @@ import { fetcher } from "../../fetcher";
 import Nav from "../../components/nav";
 
 const BlogPost = (props:any) => {
-console.log(props)
+
   return (
     <div className="relative">
       <div className="overlay-background-image bg-blue-100 opacity-25" />

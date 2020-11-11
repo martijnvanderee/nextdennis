@@ -54,3 +54,9 @@
 }
 
 @import "tailwindcss/utilities";
+
+@layer base {
+  p {
+    @apply my-2;
+  }
+}
