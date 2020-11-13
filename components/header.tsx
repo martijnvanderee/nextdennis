@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 export const Header = () => (
   <div className="relative flex p-6 mt-16 rounded-lg mb-16 shadow-offsetHover">
     <div className="absolute w-full h-full inset-0 opacity-75 rounded-lg bg-color3" />
@@ -9,15 +10,16 @@ export const Header = () => (
     />
     <div className="relative">
       <h4 className="text-white text-lg">
-        Welkom op mijn zoektocht naar beter onderwijs.
+      Ben
+ je ook benieuwd welke lessen jij kunt trekken uit de praktijk van een economiedocent?
       </h4>
 
       <p className="my-2 text-lg text-white">
-        Graag deel ik met jou mijn bevindingen en hersenspinsels hierover.
+      Hier deel ik mijn ideeën over goed lesgeven en mijn passie voor economie.
       </p>
       <p className="my-2 text-lg text-white">
-        Daarnaast vind je werkvormen, presentaties en video’s om vrij te
-        gebruiken voor (economie) lessen.
+      Ik ben ervan overtuigd dat veel inzichten vanuit het klaslokaal toepasbaar in alle situaties waar
+ je mensen wil boeien, enthousiasmeren of overtuigen!
       </p>
 
       <div>

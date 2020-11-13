@@ -18,7 +18,6 @@ const Blog: React.FunctionComponent<Props> = ({ blogPosts }) => {
         <Title
           color="#013f5d"
           title="Blog"
-          subtitle="Lees hier over mijn zoektocht naar beter onderwijs"
         />
 
         <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto ">

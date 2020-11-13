@@ -44,7 +44,7 @@ const Materiaal = () => (
               className="border-solid border-b border-color1 text-lg text-fontColor"
               href="https://drive.google.com/drive/folders/1_QW9AcIrPOQVkJHelTbpd1w0AGXcgYe0"
             >
-              5 havo
+              5 havo / 5 vwo
             </a>
           </li>
           <li>
