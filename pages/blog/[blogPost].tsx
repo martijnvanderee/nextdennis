@@ -12,12 +12,9 @@ const BlogPost = (props:any) => {
       <Nav />
 
       <div className="content-container pt-32">
-        <h1 className="text-2xl text-headerColor">{props.title}</h1>
+        <h1 className="text-4xl text-headerColor">{props.title}</h1>
         <p className="text-base text-fontColor">
-          <div className="items-center">
-            test
         <ReactMarkdown source={props.content} />
-        </div>
         </p>
       </div>
     </div>
