@@ -3,7 +3,23 @@ import { fetcher } from "../../fetcher";
 
 import Nav from "../../components/nav";
 
+
+const MyImage = (props:any) => {
+  return (
+    <img
+      className={"mx-auto max-h-h128"}
+      alt={props.alt}
+      src={props.src}
+
+    />
+  );
+};
+
+
 const BlogPost = (props:any) => {
+  const renderers = {
+    image: MyImage
+  };
 
   return (
     <div className="relative">
@@ -12,10 +28,13 @@ const BlogPost = (props:any) => {
       <Nav />
 
       <div className="content-container pt-32">
-        <h1 className="text-4xl text-headerColor">{props.title}</h1>
-        <p className="text-base text-fontColor">
-        <ReactMarkdown source={props.content} />
-        </p>
+        <h1 className="text-4xl text-headerColor text-center">{props.title}</h1>
+        <div className="text-base md:text-lg text-fontColor content-center">
+        <ReactMarkdown source={props.content} renderers={renderers} />
+
+
+
+        </div>
       </div>
     </div>
   );

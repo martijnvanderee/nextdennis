@@ -1,7 +1,6 @@
 module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
   },
   purge: ["./components/**/*.tsx", "./pages/**/*.tsx"],
   theme: {
@@ -23,6 +22,14 @@ module.exports = {
         headingColor: "#343a40",
         error: "rgba(255, 40, 40, 0.8)",
       },
+      height: {
+               h128: '32rem',
+              },
+
+              maxHeight: {
+                h128: '32rem',
+
+                      }
     },
   },
   variants: {

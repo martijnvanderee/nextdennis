@@ -49,9 +49,9 @@
   }
 }
 
-.overlay-background-image {
+/* .overlay-background-image {
   @apply object-cover h-full min-h-screen w-full absolute top-0;
-}
+} */
 
 @import "tailwindcss/utilities";
 
