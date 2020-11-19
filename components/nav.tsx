@@ -36,11 +36,9 @@ const Nav = () => (
           </a>
         </Link>
 
+          <a className="" href="https://nl.linkedin.com/in/dennisstassen">
 
-
-          <a className=" h-full" href="https://nl.linkedin.com/in/dennisstassen">
-
-          <LinkedInIcon  style={{ fontSize: 40 }} className= " text-color1  h-full ">
+          <LinkedInIcon  style={{ fontSize: 40 }} className= "text-color1 ">
            <div  className="w-10 h-10 bg-white m-auto"></div></LinkedInIcon>
 
           </a>
