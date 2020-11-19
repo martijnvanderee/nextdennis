@@ -1,11 +1,20 @@
 import ReactMarkdown from "react-markdown";
 import { fetcher } from "../../fetcher";
-import {customImage} from "../../customMarkdown"
+
 
 import Nav from "../../components/nav";
 
 
+const customImage = (props:any) => {
+  return (
+    <img
+      className={"mx-auto max-h-h128"}
+      alt={props.alt}
+      src={props.src}
 
+    />
+  );
+};
 
 const BlogPost = (props:any) => {
   const renderers = {
