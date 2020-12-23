@@ -1,24 +1,12 @@
 import ReactMarkdown from "react-markdown";
 import { fetcher } from "../../fetcher";
-
-
+import { customImage, customLink } from "../../customMarkdown";
 import Nav from "../../components/nav";
 
-
-const customImage = (props:any) => {
-  return (
-    <img
-      className={"mx-auto max-h-h128"}
-      alt={props.alt}
-      src={props.src}
-
-    />
-  );
-};
-
-const BlogPost = (props:any) => {
+const BlogPost = (props: any) => {
   const renderers = {
-    image: customImage
+    image: customImage,
+    a: customLink,
   };
 
   return (
@@ -30,10 +18,7 @@ const BlogPost = (props:any) => {
       <div className="content-container pt-32">
         <h1 className="text-4xl text-headerColor text-center">{props.title}</h1>
         <div className="text-base md:text-lg text-fontColor content-center">
-        <ReactMarkdown source={props.content} renderers={renderers} />
-
-
-
+          <ReactMarkdown source={props.content} renderers={renderers} />
         </div>
       </div>
     </div>
