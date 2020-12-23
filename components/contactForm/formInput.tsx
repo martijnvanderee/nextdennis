@@ -14,6 +14,8 @@ const extractInputProps: React.FunctionComponent<any> = (
     ...otherProps,
   };
 
+
+
   if (props.type === "checkbox") {
     props.value = option.value;
     props.checked = formik.values[props.name].includes(option.value);

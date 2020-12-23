@@ -8,10 +8,10 @@ type IValues = {
   subject: string;
 };
 
-export const onSubmit = async (values: any, { resetForm }: any) => {
+export const onSubmit = async (values: any,test: any) => {
   const { name, email, message, instantie, subject } = values;
 
-  await fetcher(
+  const data = await fetcher(
     [
       "https://us-central1-website-dennis-stassen.cloudfunctions.net/app",
       "mail",
@@ -24,6 +24,7 @@ export const onSubmit = async (values: any, { resetForm }: any) => {
       subject,
     }
   );
+  console.log(data,'data')
 
-  resetForm({});
+  test.resetForm({});
 };

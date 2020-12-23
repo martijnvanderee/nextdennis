@@ -18,7 +18,18 @@ export const ContactForm = () => {
       initialValues={initialValues}
       validate={validate}
     >
-      <FormConstruct />
+
+
+{props => (
+
+  <div>
+    <FormConstruct />
+       <div> {console.log("props1",props)} {console.log("props1",props.isSubmitting)} {console.log("props1",props.errors)}</div>
+       </div>
+       )}
+
+
+
     </Formik>
   );
 };

@@ -28,7 +28,6 @@ module.exports = {
 
               maxHeight: {
                 h128: '32rem',
-
                       }
     },
   },
