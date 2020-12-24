@@ -6,6 +6,11 @@ export const customImage = (props: any) => {
 
 export const customLink = (props: any) => {
   return (
-    <a className={"border-solid border-b border-color1 text-lg text-white"} />
+    <a
+      className={"border-solid border-b border-color1 text-lg fontColor"}
+      href={props.href}
+    >
+      {props.children}
+    </a>
   );
 };

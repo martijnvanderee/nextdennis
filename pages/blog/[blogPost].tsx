@@ -6,13 +6,12 @@ import Nav from "../../components/nav";
 const BlogPost = (props: any) => {
   const renderers = {
     image: customImage,
-    a: customLink,
+    link: customLink,
   };
 
   return (
     <div className="relative">
       <div className="overlay-background-image bg-blue-100 opacity-25" />
-
       <Nav />
 
       <div className="content-container pt-32">
